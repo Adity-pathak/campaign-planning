@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>June Campaign Plan — Color, Confidence &amp; Care | Herbishh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#221A26;
+  --ink-soft:#63586A;
+  --bg:#FAF7F5;
+  --paper:#FFFFFF;
+  --line:#E8E1E4;
+  --line-soft:#F1ECEE;
+
+  /* the seven — used as a structural device, not decoration */
+  --c1:#D8412F;
+  --c2:#E8803A;
+  --c3:#EDB92E;
+  --c4:#4E9B5B;
+  --c5:#2F7CB8;
+  --c6:#3B3C8F;
+  --c7:#6E4392;
+
+  --pride:#6E4392;
+  --pride-tint:#F3EEF8;
+  --dad:#2F4858;
+  --dad-tint:#EBF0F2;
+  --mail:#0E7C6B;
+  --mail-tint:#E7F3F1;
+
+  --maxw:1180px;
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:'Figtree',system-ui,-apple-system,sans-serif;
+  font-size:16.5px;line-height:1.68;-webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+h1,h2,h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:500;line-height:1.1;letter-spacing:-.02em}
+
+/* the spectrum rule — the page's recurring signature */
+.spectrum{height:6px;width:100%;border-radius:99px;display:flex;overflow:hidden}
+.spectrum i{flex:1}
+.spectrum i:nth-child(1){background:var(--c1)}
+.spectrum i:nth-child(2){background:var(--c2)}
+.spectrum i:nth-child(3){background:var(--c3)}
+.spectrum i:nth-child(4){background:var(--c4)}
+.spectrum i:nth-child(5){background:var(--c5)}
+.spectrum i:nth-child(6){background:var(--c6)}
+.spectrum i:nth-child(7){background:var(--c7)}
+
+/* ---------------- COVER ---------------- */
+.cover{background:var(--ink);color:#fff;padding:0 0 74px;position:relative;overflow:hidden}
+.cover-bar{height:9px;display:flex}
+.cover-bar i{flex:1}
+.cover-bar i:nth-child(1){background:var(--c1)}
+.cover-bar i:nth-child(2){background:var(--c2)}
+.cover-bar i:nth-child(3){background:var(--c3)}
+.cover-bar i:nth-child(4){background:var(--c4)}
+.cover-bar i:nth-child(5){background:var(--c5)}
+.cover-bar i:nth-child(6){background:var(--c6)}
+.cover-bar i:nth-child(7){background:var(--c7)}
+.cover-in{max-width:var(--maxw);margin:0 auto;padding:76px 32px 0;position:relative;z-index:2}
+.cover::after{
+  content:"";position:absolute;right:-8%;top:8%;width:52%;height:120%;opacity:.15;
+  background:conic-gradient(from 200deg,var(--c1),var(--c2),var(--c3),var(--c4),var(--c5),var(--c6),var(--c7),var(--c1));
+  filter:blur(70px);border-radius:50%;pointer-events:none;
+}
+.eyebrow{font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;font-weight:700;color:#C9A9E0;margin-bottom:20px}
+.cover h1{font-size:clamp(40px,6.6vw,74px);font-weight:600;margin-bottom:8px}
+.cover .brandline{font-size:19px;opacity:.62;margin-bottom:30px;font-weight:500}
+.name-badge{
+  display:inline-flex;align-items:center;gap:14px;
+  border:1px solid rgba(255,255,255,.22);border-radius:999px;
+  padding:11px 24px 11px 14px;margin-bottom:30px;
+}
+.name-badge .dots{display:flex;gap:4px}
+.name-badge .dots i{width:9px;height:9px;border-radius:50%}
+.name-badge span{font-size:17px;font-weight:600;letter-spacing:-.01em}
+.cover .idea{font-size:19px;max-width:700px;opacity:.9;line-height:1.6}
+.cover .idea b{font-weight:700;color:#fff}
+.cover-meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.pill{
+  border:1px solid rgba(255,255,255,.24);border-radius:999px;
+  padding:8px 17px;font-size:13px;font-weight:600;color:rgba(255,255,255,.9);
+}
+
+/* ---------------- JUNE TIMELINE (signature) ---------------- */
+.timeline-sec{padding:64px 0 0}
+.timeline{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r);
+  padding:34px 32px 30px;
+}
+.tl-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.tl-head h3{font-size:22px}
+.tl-head span{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+.weeks{display:grid;grid-template-columns:150px repeat(4,1fr);gap:0 8px;align-items:center}
+.wk-label{
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:800;
+  color:var(--ink-soft);text-align:center;padding-bottom:12px;
+}
+.wk-label.blank{text-align:left}
+.tl-row-name{
+  grid-column:1;
+  font-size:14.5px;font-weight:700;padding:11px 12px 11px 0;
+  display:flex;align-items:center;gap:9px;
+}
+.tl-row-name i{width:9px;height:9px;border-radius:50%;flex:none}
+.bar{
+  height:34px;border-radius:9px;display:flex;align-items:center;
+  padding:0 14px;font-size:13px;font-weight:700;color:#fff;margin:5px 0;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+}
+.bar.pride{
+  grid-column:2 / span 4;
+  background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3),var(--c4),var(--c5),var(--c6),var(--c7));
+}
+.bar.dad{grid-column:3 / span 2;background:var(--dad)}
+.bar.mail{grid-column:3 / span 3;background:var(--mail)}
+.tl-note{margin-top:18px;font-size:13.5px;color:var(--ink-soft);border-top:1px solid var(--line-soft);padding-top:14px}
+
+/* ---------------- SECTIONS ---------------- */
+section{padding:76px 0}
+.sec-head{margin-bottom:40px;max-width:800px}
+.sec-tag{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;
+  padding:7px 15px;border-radius:999px;margin-bottom:18px;
+}
+.sec-tag.pride{background:var(--pride-tint);color:var(--pride)}
+.sec-tag.dad{background:var(--dad-tint);color:var(--dad)}
+.sec-tag.mail{background:var(--mail-tint);color:var(--mail)}
+.sec-tag.sale{background:#FBF0E4;color:#9A5B14}
+.sec-head h2{font-size:clamp(30px,4.4vw,46px);margin-bottom:12px}
+.sec-head p{color:var(--ink-soft);font-size:17.5px}
+.count{color:var(--ink-soft);font-weight:600;font-size:15px}
+
+/* ---------------- TASK CARDS ---------------- */
+.tasks{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.task{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px 26px 22px;display:flex;flex-direction:column;position:relative;
+  transition:transform .26s ease,box-shadow .26s ease;
+}
+.task:hover{transform:translateY(-4px);box-shadow:0 16px 38px rgba(34,26,38,.09)}
+.task::before{
+  content:"";position:absolute;left:0;top:22px;bottom:22px;width:3px;border-radius:0 3px 3px 0;
+}
+.pride-set .task:nth-child(7n+1)::before{background:var(--c1)}
+.pride-set .task:nth-child(7n+2)::before{background:var(--c2)}
+.pride-set .task:nth-child(7n+3)::before{background:var(--c3)}
+.pride-set .task:nth-child(7n+4)::before{background:var(--c4)}
+.pride-set .task:nth-child(7n+5)::before{background:var(--c5)}
+.pride-set .task:nth-child(7n+6)::before{background:var(--c6)}
+.pride-set .task:nth-child(7n+7)::before{background:var(--c7)}
+.dad-set .task::before{background:var(--dad)}
+.mail-set .task::before{background:var(--mail)}
+
+.task-top{display:flex;align-items:flex-start;gap:13px;margin-bottom:13px}
+.tnum{
+  width:29px;height:29px;border-radius:9px;flex:none;display:grid;place-items:center;
+  font-size:13px;font-weight:800;background:var(--ink);color:#fff;
+}
+.task h3{font-size:19px;font-weight:600;line-height:1.28;padding-top:2px}
+.platform{
+  display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.06em;
+  background:var(--bg);border:1px solid var(--line);border-radius:999px;
+  padding:5px 12px;color:var(--ink-soft);margin-bottom:14px;align-self:flex-start;
+}
+.task .what{font-size:15.5px;color:var(--ink-soft);margin-bottom:18px}
+.task .what b{color:var(--ink);font-weight:700}
+
+.approval{margin-top:auto;padding-top:15px;border-top:1px solid var(--line-soft)}
+.check{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:700}
+.box{
+  width:17px;height:17px;border:2px solid var(--ink-soft);border-radius:5px;flex:none;
+}
+.note{
+  margin-top:9px;font-size:13px;font-weight:600;color:#9A5B14;
+  background:#FBF0E4;border-radius:8px;padding:7px 12px;display:inline-block;
+}
+
+/* ---------------- SALE STRATEGY ---------------- */
+.sale{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;
+}
+.sale-top{padding:30px 34px;border-bottom:1px solid var(--line);background:#FDF8F2}
+.sale-top h3{font-size:25px;margin-bottom:6px}
+.sale-top p{font-size:15px;color:var(--ink-soft);font-weight:600}
+.sale-cols{display:grid;grid-template-columns:1fr 1fr}
+.sale-col{padding:30px 34px}
+.sale-col + .sale-col{border-left:1px solid var(--line)}
+.sale-col .lbl{
+  font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;
+  color:var(--ink-soft);display:block;margin-bottom:10px;
+}
+.sale-col p{font-size:15.5px;color:var(--ink-soft)}
+
+/* ---------------- CLOSE ---------------- */
+.close{background:var(--ink);color:#fff;padding:78px 32px;text-align:center;position:relative}
+.close .eyebrow{color:#C9A9E0}
+.close p{
+  font-family:'Bricolage Grotesque',sans-serif;font-weight:400;
+  font-size:clamp(23px,3.2vw,34px);line-height:1.35;max-width:880px;margin:0 auto;letter-spacing:-.02em;
+}
+.close .hl{
+  background:linear-gradient(90deg,var(--c1),var(--c2),var(--c3),var(--c4),var(--c5),var(--c6),var(--c7));
+  -webkit-background-clip:text;background-clip:text;color:transparent;font-weight:600;
+}
+footer{background:#1A1420;color:rgba(255,255,255,.45);text-align:center;padding:30px 24px;font-size:13px}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media(max-width:900px){
+  .sale-cols{grid-template-columns:1fr}
+  .sale-col + .sale-col{border-left:0;border-top:1px solid var(--line)}
+  .weeks{grid-template-columns:1fr;gap:0}
+  .wk-label{display:none}
+  .tl-row-name{padding-bottom:0}
+  .bar{
+    grid-column:1 / -1 !important;margin-bottom:14px;
+    white-space:normal;height:auto;min-height:34px;
+    padding:9px 14px;line-height:1.35;overflow:visible;text-overflow:clip;
+  }
+}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  section{padding:54px 0}
+  .cover-in{padding:56px 20px 0}
+  .tasks{grid-template-columns:1fr}
+  .timeline{padding:26px 22px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+:focus-visible{outline:2.5px solid var(--c6);outline-offset:3px;border-radius:5px}
+@media print{
+  body{background:#fff}
+  .cover,.close{background:var(--ink)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .task,.timeline,.sale{break-inside:avoid;box-shadow:none}
+  section{padding:30px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= COVER ================= -->
+<header class="cover">
+  <div class="cover-bar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="cover-in">
+    <div class="eyebrow">Pride Month &times; Father's Day</div>
+    <h1>June Campaign Plan</h1>
+    <div class="brandline">for Herbishh</div>
+
+    <div class="name-badge">
+      <span class="dots">
+        <i style="background:var(--c1)"></i><i style="background:var(--c2)"></i><i style="background:var(--c3)"></i>
+        <i style="background:var(--c4)"></i><i style="background:var(--c5)"></i><i style="background:var(--c6)"></i>
+        <i style="background:var(--c7)"></i>
+      </span>
+      <span>Color, Confidence &amp; Care</span>
+    </div>
+
+    <p class="idea"><b>Universal idea:</b> June will be about <b>self-expression through color</b>, <b>confidence through hair care</b>, and <b>thoughtful gifting for Father's Day</b></p>
+
+    <div class="cover-meta">
+      <span class="pill">Pride Month &mdash; 8 tasks</span>
+      <span class="pill">Father's Day &mdash; 5 tasks</span>
+      <span class="pill">Email &mdash; 2 sends</span>
+      <span class="pill">1 sale strategy</span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= JUNE TIMELINE ================= -->
+<div class="timeline-sec">
+  <div class="wrap">
+    <div class="timeline">
+      <div class="tl-head">
+        <h3>How June runs</h3>
+        <span>Month at a glance</span>
+      </div>
+      <div class="weeks">
+        <div class="wk-label blank"></div>
+        <div class="wk-label">Week 1</div>
+        <div class="wk-label">Week 2</div>
+        <div class="wk-label">Week 3</div>
+        <div class="wk-label">Week 4</div>
+
+        <div class="tl-row-name"><i style="background:var(--c6)"></i>Pride Month</div>
+        <div class="bar pride">Full month &mdash; Color, Confidence &amp; Care</div>
+
+        <div class="tl-row-name"><i style="background:var(--dad)"></i>Father's Day</div>
+        <div class="bar dad">Banner live: Week 2 start &rarr; Week 3 end</div>
+
+        <div class="tl-row-name"><i style="background:var(--mail)"></i>Email</div>
+        <div class="bar mail">Buying guide email &mdash; start sharing from Week 2</div>
+      </div>
+      <p class="tl-note">Timing shown is taken from the plan: the Father's Day banner runs from the beginning of Week 2 to the end of Week 3, and the Father's Day buying guide email starts sharing from the second week. Pride activity runs across the full month.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ================= PRIDE MONTH ================= -->
+<section id="pride">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag pride">Pride Month Campaign</div>
+      <h2>Pride Month</h2>
+      <p class="count">8 tasks &mdash; social, website, blog, Pinterest, and creator-led</p>
+    </div>
+
+    <div class="tasks pride-set">
+      <article class="task">
+        <div class="task-top"><div class="tnum">1</div><h3>Pride logo change</h3></div>
+        <span class="platform">Social Media</span>
+        <p class="what">Change Herbishh logo/profile picture into Pride-inspired 7 colors for June.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">2</div><h3>Pride hero banner</h3></div>
+        <span class="platform">Herbishh Global Website</span>
+        <p class="what">Add 1 Pride Month hero banner on the homepage.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div><span class="note">Pls add Bhupender also</span></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">3</div><h3>Pride Month blog</h3></div>
+        <span class="platform">Website Blog</span>
+        <p class="what">Write one blog featuring top Herbishh shades for Pride Month/self-expression.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">4</div><h3>Pride social media theme</h3></div>
+        <span class="platform">Social Media</span>
+        <p class="what">Follow the <b>Color, Confidence &amp; Care</b> theme across Pride Month posts.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">5</div><h3>Founder's Diaries post</h3></div>
+        <span class="platform">Social Media</span>
+        <p class="what">Create a simple post from brand/founder angle about Herbishh, color, confidence, and self-expression.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">6</div><h3>Pinterest mood board</h3></div>
+        <span class="platform">Pinterest</span>
+        <p class="what">Create mood-board style pins: Pride hair color ideas featuring every shade and its story.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">7</div><h3>LGBTQ influencer reel</h3></div>
+        <span class="platform">Instagram / Reels</span>
+        <p class="what">One paid or barter reel from an LGBTQ creator with a meaningful message connecting identity, confidence, and hair color.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div><span class="note">Pls include Mariel and Tripti</span></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">8</div><h3>Pride social posts</h3></div>
+        <span class="platform">Social Media</span>
+        <p class="what">Create Pride-oriented posts/reels/stories across the month.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FATHER'S DAY ================= -->
+<section id="fathers" style="background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag dad">Father's Day Campaign</div>
+      <h2>Father's Day</h2>
+      <p class="count">5 tasks &mdash; gifting, grooming, and grey coverage</p>
+    </div>
+
+    <div class="tasks dad-set">
+      <article class="task">
+        <div class="task-top"><div class="tnum">1</div><h3>Father's Day banner</h3></div>
+        <span class="platform">Website</span>
+        <p class="what">Add Father's Day banner from <b>June Week 2 beginning to Week 3 end</b>.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div><span class="note">Pls add Bhupi</span></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">2</div><h3>Father's Day PLP page</h3></div>
+        <span class="platform">Website</span>
+        <p class="what">Create Father's Day grooming/gifting PLP page since we have limited men-specific products.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div><span class="note">Include .in &amp; .com</span></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">3</div><h3>Father's Day blog</h3></div>
+        <span class="platform">Website Blog / Buying Guide</span>
+        <p class="what">Write one blog around Father's Day gifting/grooming/grey coverage.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">4</div><h3>Father's Day giveaway</h3></div>
+        <span class="platform">Social Media</span>
+        <p class="what">Run a giveaway focused on gifting/self-care for dads.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">5</div><h3>Father's Day social posts</h3></div>
+        <span class="platform">Social Media</span>
+        <p class="what">Create posts around useful gifting, grey coverage, and grooming for dads.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EMAIL ================= -->
+<section id="email">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag mail">Email Marketing</div>
+      <h2>June Email Plan</h2>
+      <p class="count">2 sends &mdash; one per campaign</p>
+    </div>
+
+    <div class="tasks mail-set">
+      <article class="task">
+        <div class="task-top"><div class="tnum">1</div><h3>Pride Month blog</h3></div>
+        <span class="platform">Blog email</span>
+        <p class="what"><b>Purpose:</b> Drive traffic to Pride Month blog and shade-focused products.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div></div>
+      </article>
+
+      <article class="task">
+        <div class="task-top"><div class="tnum">2</div><h3>Father's Day gift guide</h3></div>
+        <span class="platform">Buying guide email</span>
+        <p class="what"><b>Purpose:</b> Promote Father's Day grooming/gifting page and product recommendations.</p>
+        <div class="approval"><div class="check"><span class="box"></span>Approved</div><span class="note">Start sharing from 2nd week</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SALE STRATEGY ================= -->
+<section id="sale" style="background:var(--paper);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag sale">Sale Strategy Suggestion</div>
+      <h2>Sale Strategy</h2>
+    </div>
+
+    <div class="sale">
+      <div class="sale-top">
+        <h3>Pride Month Shade Offer</h3>
+        <p>Color shampoo and PPD-free range</p>
+        <div class="spectrum" style="margin-top:16px;max-width:220px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="sale-cols">
+        <div class="sale-col">
+          <span class="lbl">How we can do it</span>
+          <p>Give a special offer on selected hair color shampoo shades or the PPD-free color shampoo range. Along with a generic sitewide offer, give a better discount on color shampoo and PPD-free range.</p>
+        </div>
+        <div class="sale-col">
+          <span class="lbl">Why this is better</span>
+          <p>It feels more connected to the campaign instead of a random discount. Helps push the most campaign-relevant product category.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CLOSE ================= -->
+<div class="close">
+  <div class="eyebrow">The through-line</div>
+  <p>June will be about <span class="hl">self-expression through color</span>, confidence through hair care, and thoughtful gifting for Father's Day.</p>
+</div>
+
+<footer>June Campaign Plan &mdash; Color, Confidence &amp; Care &nbsp;&middot;&nbsp; Herbishh</footer>
+
+</body>
+</html>
