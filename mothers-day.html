@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mother's Day Campaign Plan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#F7F5F1;
+  --paper:#FFFFFF;
+  --charcoal:#1E2A2F;
+  --charcoal-soft:#5A676D;
+  --sage:#A8C3A0;
+  --sage-deep:#5F8259;
+  --sage-tint:#EFF4ED;
+  --rose:#C4707A;
+  --rose-deep:#A24E58;
+  --rose-tint:#FAEFF0;
+  --line:#E4DFD8;
+  --line-soft:#EFEAE3;
+  --maxw:1180px;
+  --r:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--cream);
+  color:var(--charcoal);
+  font-family:'Manrope',system-ui,-apple-system,sans-serif;
+  font-size:16.5px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 32px}
+h1,h2,h3,.serif{font-family:'Newsreader',Georgia,serif;font-weight:400;line-height:1.15;letter-spacing:-.01em}
+
+/* ---------- COVER ---------- */
+.cover{
+  background:
+    radial-gradient(90% 70% at 12% 10%, rgba(196,112,122,.30), transparent 60%),
+    radial-gradient(80% 70% at 88% 85%, rgba(168,195,160,.34), transparent 60%),
+    var(--charcoal);
+  color:#fff;padding:104px 32px 92px;position:relative;overflow:hidden;
+}
+.cover::after{
+  content:"";position:absolute;inset:0;opacity:.09;pointer-events:none;
+  background:repeating-linear-gradient(115deg,transparent 0 9px,rgba(255,255,255,.6) 9px 10px);
+  mask-image:radial-gradient(70% 70% at 50% 50%,#000,transparent 80%);
+  -webkit-mask-image:radial-gradient(70% 70% at 50% 50%,#000,transparent 80%);
+}
+.cover-in{max-width:var(--maxw);margin:0 auto;position:relative;z-index:2}
+.eyebrow{
+  font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;
+  font-weight:700;color:#EBB9BE;margin-bottom:22px;
+}
+.cover h1{font-size:clamp(42px,7vw,80px);font-weight:300;margin-bottom:20px}
+.cover h1 em{font-style:italic;color:#F0C4C8}
+.cover .lede{font-size:19px;max-width:640px;opacity:.88;font-weight:400}
+.cover-meta{
+  display:flex;flex-wrap:wrap;gap:12px;margin-top:38px;
+}
+.pill{
+  border:1px solid rgba(255,255,255,.28);border-radius:999px;
+  padding:8px 18px;font-size:13px;font-weight:600;letter-spacing:.04em;
+  color:rgba(255,255,255,.9);
+}
+
+/* ---------- SECTION SCAFFOLD ---------- */
+section{padding:82px 0}
+.sec-head{margin-bottom:46px;max-width:780px}
+.sec-num{
+  display:inline-flex;align-items:center;gap:12px;
+  font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;
+  font-weight:700;color:var(--rose-deep);margin-bottom:16px;
+}
+.sec-num::before{content:"";width:30px;height:2px;background:var(--rose);border-radius:2px}
+.sec-head h2{font-size:clamp(28px,4vw,44px);margin-bottom:14px}
+.sec-head p{color:var(--charcoal-soft);font-size:17.5px}
+
+/* ---------- OBJECTIVE BAND ---------- */
+.objective{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--r);padding:44px 48px;
+  display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:start;
+}
+.objective .mark{
+  width:56px;height:56px;border-radius:50%;flex:none;
+  background:var(--rose-tint);border:1px solid #EFD9DB;
+  display:grid;place-items:center;color:var(--rose-deep);
+}
+.objective p{font-size:19px;color:var(--charcoal-soft);line-height:1.65}
+.objective p strong{color:var(--charcoal);font-weight:700}
+
+/* ---------- GOAL GRID ---------- */
+.goals{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.goal{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r);
+  padding:30px 26px;transition:transform .28s ease,box-shadow .28s ease;
+}
+.goal:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(30,42,47,.08)}
+.goal .g-ico{
+  width:42px;height:42px;border-radius:12px;background:var(--sage-tint);
+  display:grid;place-items:center;color:var(--sage-deep);margin-bottom:18px;
+}
+.goal p{font-size:16px;color:var(--charcoal-soft);font-weight:500}
+
+/* ---------- PILLAR NAV ---------- */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+.pillar{
+  display:block;text-decoration:none;color:inherit;
+  background:var(--charcoal);color:#fff;border-radius:var(--r);
+  padding:30px 28px;transition:transform .28s ease;
+}
+.pillar:nth-child(2){background:var(--rose-deep)}
+.pillar:nth-child(3){background:var(--sage-deep)}
+.pillar:hover{transform:translateY(-4px)}
+.pillar .p-k{font-size:11px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;opacity:.7}
+.pillar h3{font-size:26px;margin:10px 0 8px;color:#fff}
+.pillar p{font-size:14.5px;opacity:.82}
+
+/* ---------- TACTIC CARDS ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:22px}
+.card{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--r);
+  padding:32px 30px 28px;display:flex;flex-direction:column;
+  position:relative;transition:transform .28s ease,box-shadow .28s ease,border-color .28s ease;
+}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(30,42,47,.09);border-color:var(--line-soft)}
+.card-top{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.card-n{
+  width:34px;height:34px;border-radius:10px;flex:none;
+  display:grid;place-items:center;font-size:14px;font-weight:800;
+  background:var(--charcoal);color:#fff;
+}
+.web .card-n{background:var(--charcoal)}
+.social .card-n{background:var(--rose-deep)}
+.combo .card-n{background:var(--sage-deep)}
+.card h3{font-size:21px;font-weight:500;line-height:1.25}
+
+.field{padding:15px 0;border-top:1px solid var(--line-soft)}
+.field:first-of-type{border-top:0;padding-top:0}
+.field .lbl{
+  font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+  font-weight:800;color:var(--charcoal-soft);margin-bottom:7px;display:block;
+}
+.field p{font-size:15.5px;color:var(--charcoal-soft);line-height:1.62}
+
+.examples{margin-top:auto;padding-top:16px;border-top:1px solid var(--line-soft)}
+.examples .lbl{
+  font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;
+  font-weight:800;color:var(--rose-deep);margin-bottom:10px;display:block;
+}
+.social .examples .lbl{color:var(--rose-deep)}
+.combo .examples .lbl{color:var(--sage-deep)}
+.ex{
+  background:var(--cream);border-left:2.5px solid var(--rose);
+  border-radius:0 8px 8px 0;padding:11px 15px;margin-bottom:8px;
+  font-size:15px;font-style:italic;color:var(--charcoal);
+}
+.web .ex{border-left-color:var(--charcoal)}
+.combo .ex{border-left-color:var(--sage-deep)}
+.ex:last-child{margin-bottom:0}
+
+/* ---------- 5-DAY FLOW (signature) ---------- */
+.flow{
+  background:var(--paper);border:1px solid var(--line);
+  border-radius:var(--r);padding:40px 34px;margin-bottom:26px;
+}
+.flow-h{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.flow-h h3{font-size:24px;font-weight:500}
+.flow-h span{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep)}
+.days{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.days::before{
+  content:"";position:absolute;top:19px;left:10%;right:10%;height:2px;
+  background:linear-gradient(90deg,var(--charcoal),var(--rose),var(--sage-deep));
+  border-radius:2px;opacity:.35;
+}
+.day{text-align:center;padding:0 8px;position:relative;z-index:2}
+.day .dot{
+  width:40px;height:40px;border-radius:50%;margin:0 auto 14px;
+  background:var(--paper);border:2px solid var(--rose);
+  display:grid;place-items:center;font-size:13px;font-weight:800;color:var(--rose-deep);
+}
+.day:first-child .dot{border-color:var(--charcoal);color:var(--charcoal)}
+.day:last-child .dot{border-color:var(--sage-deep);color:var(--sage-deep)}
+.day b{display:block;font-size:15.5px;font-weight:700;margin-bottom:3px}
+.day p{font-size:13.5px;color:var(--charcoal-soft);line-height:1.5}
+
+/* ---------- SUMMARY ---------- */
+.summary{
+  background:
+    radial-gradient(90% 80% at 15% 20%, rgba(196,112,122,.30), transparent 62%),
+    radial-gradient(85% 80% at 85% 80%, rgba(168,195,160,.32), transparent 62%),
+    var(--charcoal);
+  color:#fff;padding:88px 32px;text-align:center;
+}
+.summary .eyebrow{color:#EBB9BE}
+.summary p{
+  font-family:'Newsreader',serif;font-size:clamp(23px,3.3vw,34px);
+  font-weight:300;line-height:1.4;max-width:900px;margin:0 auto;
+}
+.summary p em{font-style:italic;color:#F0C4C8}
+
+footer{
+  background:#172024;color:rgba(255,255,255,.5);
+  text-align:center;padding:34px 24px;font-size:13.5px;letter-spacing:.03em;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media(max-width:1000px){
+  .goals{grid-template-columns:repeat(2,1fr)}
+  .pillars{grid-template-columns:1fr}
+  .days{grid-template-columns:repeat(2,1fr);gap:26px}
+  .days::before{display:none}
+}
+@media(max-width:720px){
+  .wrap{padding:0 20px}
+  section{padding:58px 0}
+  .goals{grid-template-columns:1fr}
+  .days{grid-template-columns:1fr}
+  .objective{grid-template-columns:1fr;padding:32px 26px;gap:20px}
+  .cover{padding:74px 20px 62px}
+  .cards{grid-template-columns:1fr}
+  .flow{padding:30px 22px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+:focus-visible{outline:2.5px solid var(--rose);outline-offset:3px;border-radius:5px}
+
+@media print{
+  body{background:#fff}
+  .cover,.summary{background:var(--charcoal)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .card,.goal,.flow,.objective{break-inside:avoid;box-shadow:none}
+  section{padding:34px 0}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= COVER ================= -->
+<header class="cover">
+  <div class="cover-in">
+    <div class="eyebrow">Campaign Plan</div>
+    <h1>Mother's Day<br><em>Campaign Plan</em></h1>
+    <p class="lede">A campaign that combines website gifting experience, social media engagement, and emotional storytelling to drive both traffic and conversions.</p>
+    <div class="cover-meta">
+      <span class="pill">Website &amp; SEO</span>
+      <span class="pill">Social Media</span>
+      <span class="pill">Combined Content</span>
+      <span class="pill">12 Tactics</span>
+    </div>
+  </div>
+</header>
+
+<!-- ================= OBJECTIVE ================= -->
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-num">Objective</div>
+      <h2>Campaign Objective</h2>
+    </div>
+    <div class="objective">
+      <div class="mark" aria-hidden="true">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+      </div>
+      <p>The campaign supports both <strong>website traffic/conversion</strong> and <strong>social media engagement</strong>, while making the brand feel more personal, emotional, and gift-relevant during the occasion.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GOALS ================= -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-num">Goals</div>
+      <h2>Campaign Goal</h2>
+    </div>
+    <div class="goals">
+      <div class="goal">
+        <div class="g-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V11M10 19V5M16 19v-6M22 19H2"/></svg></div>
+        <p>Increase seasonal engagement across social media</p>
+      </div>
+      <div class="goal">
+        <div class="g-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h13M12 5l7 7-7 7"/><path d="M21 4v16"/></svg></div>
+        <p>Drive traffic to the website through Mother's Day-focused content</p>
+      </div>
+      <div class="goal">
+        <div class="g-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg></div>
+        <p>Improve product discovery through gifting-based merchandising</p>
+      </div>
+      <div class="goal">
+        <div class="g-ico"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h2l2.3 10.6a2 2 0 002 1.6h7.4a2 2 0 002-1.6L20 9H6"/><circle cx="10" cy="20.5" r="1.2"/><circle cx="17" cy="20.5" r="1.2"/></svg></div>
+        <p>Encourage conversions through campaign-led offers and curated shopping</p>
+      </div>
+    </div>
+
+    <div class="pillars">
+      <a class="pillar" href="#website">
+        <div class="p-k">Track 01</div>
+        <h3>Website / SEO</h3>
+        <p>5 tactics &mdash; landing page, offer strip, gift labels, blog, buying guide</p>
+      </a>
+      <a class="pillar" href="#social">
+        <div class="p-k">Track 02</div>
+        <h3>Social Media</h3>
+        <p>4 tactics &mdash; campaign flow, stories, reels, carousels</p>
+      </a>
+      <a class="pillar" href="#combined">
+        <div class="p-k">Track 03</div>
+        <h3>Combined Content</h3>
+        <p>3 tactics &mdash; founder's note, team stories, behind the campaign</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WEBSITE / SEO ================= -->
+<section id="website" style="background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-num">Track 01</div>
+      <h2>Website / SEO</h2>
+      <p>Building a clear gifting destination on site, keeping the campaign visible, and capturing seasonal search demand.</p>
+    </div>
+
+    <div class="cards web">
+      <article class="card">
+        <div class="card-top"><div class="card-n">1</div><h3>Dedicated Mother's Day Landing Page</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Create a separate Mother's Day page to collect all relevant products, offers, and campaign content in one place.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It gives users one clear shopping destination and makes campaign traffic easier to convert.</p></div>
+        <div class="examples"><span class="lbl">Example</span><div class="ex">Shop Mother's Day Gifts page with bestsellers, bundles, and gifting picks.</div></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><div class="card-n">2</div><h3>Mother's Day Offer Strip</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Add a top strip on the website to highlight the Mother's Day offer.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It keeps the campaign visible across the site and creates urgency.</p></div>
+        <div class="examples"><span class="lbl">Example</span><div class="ex">Mother's Day Special: Flat 20% Off on Gift Picks</div></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><div class="card-n">3</div><h3>Mother's Day Gift Label on Products</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Add a small "Mother's Day Gift" tag on selected products if technically possible.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It helps users quickly identify gifting-friendly products while browsing.</p></div>
+        <div class="examples"><span class="lbl">Example</span><div class="ex">Mother's Day Pick</div><div class="ex">Perfect for Gifting</div></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><div class="card-n">4</div><h3>Mother's Day Theme Blog</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Publish a blog around Mother's Day gifting, self-care, or celebration ideas.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It supports SEO, brings seasonal traffic, and can also direct readers to products.</p></div>
+        <div class="examples"><span class="lbl">Example</span><div class="ex">5 Mother's Day Gifts She'll Actually Use</div></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><div class="card-n">5</div><h3>Mother's Day Buying Guide</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Launch one buying guide specially for Mother's Day.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It helps customers choose the right gift based on need, type, or budget.</p></div>
+        <div class="examples"><span class="lbl">Example</span><div class="ex">Mother's Day Gift Guide: How to Choose the Right Gift for Every Mom</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOCIAL MEDIA ================= -->
+<section id="social">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-num">Track 02</div>
+      <h2>Social Media</h2>
+      <p>Keeping the campaign live across multiple days with content people can relate to, react to, and share.</p>
+    </div>
+
+    <!-- signature: the 5-day flow -->
+    <div class="flow">
+      <div class="flow-h">
+        <h3>4&ndash;5 Day Campaign Flow</h3>
+        <span>Tactic 01</span>
+      </div>
+      <div class="days">
+        <div class="day"><div class="dot">D1</div><b>Teaser</b><p>Day 1 teaser</p></div>
+        <div class="day"><div class="dot">D2</div><b>Offer Launch</b><p>Day 2 offer launch</p></div>
+        <div class="day"><div class="dot">D3</div><b>Engagement</b><p>Day 3 engagement</p></div>
+        <div class="day"><div class="dot">D4</div><b>Gift Push</b><p>Day 4 gift push</p></div>
+        <div class="day"><div class="dot">D5</div><b>Last Call</b><p>Day 5 last call</p></div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:30px;padding-top:26px;border-top:1px solid var(--line-soft)">
+        <div><span class="lbl" style="font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--charcoal-soft);display:block;margin-bottom:7px">What we would do</span><p style="font-size:15.5px;color:var(--charcoal-soft)">Run the campaign in stages like teaser, launch, engagement, reminder, and last call.</p></div>
+        <div><span class="lbl" style="font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:var(--charcoal-soft);display:block;margin-bottom:7px">How it will work</span><p style="font-size:15.5px;color:var(--charcoal-soft)">It keeps the campaign active for multiple days instead of depending on one post.</p></div>
+      </div>
+    </div>
+
+    <div class="cards social">
+      <article class="card">
+        <div class="card-top"><div class="card-n">2</div><h3>Story Engagement Content</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Use story polls, quizzes, and Q&amp;A to involve the audience.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It increases interaction and makes the campaign more fun and personal.</p></div>
+        <div class="examples"><span class="lbl">Examples</span><div class="ex">Poll: What would your mom choose?</div><div class="ex">Q&amp;A: What's the funniest thing your mom says?</div></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><div class="card-n">3</div><h3>Reel Content</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Create relatable and product-led Mother's Day reels.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It improves reach and gives us engaging content that people can relate to and share.</p></div>
+        <div class="examples"><span class="lbl">Examples</span><div class="ex">Things Moms Say in Real Life</div><div class="ex">Best Mother's Day Picks from Our Website</div></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><div class="card-n">4</div><h3>Carousel Content</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Create carousel posts around gifting and relatable Mother's Day topics.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It allows us to show multiple ideas or products in one post and increases saves/shares.</p></div>
+        <div class="examples"><span class="lbl">Examples</span><div class="ex">5 Gifts She'll Actually Use This Mother's Day</div><div class="ex">Gift Guide for Every Mom</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMBINED ================= -->
+<section id="combined" style="background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-num">Track 03</div>
+      <h2>Website + Social Combined Content</h2>
+      <p>The emotional layer &mdash; the storytelling that makes the campaign feel intentional rather than sales-driven.</p>
+    </div>
+
+    <div class="cards combo">
+      <article class="card">
+        <div class="card-top"><div class="card-n">1</div><h3>Founder's Note</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Share a short founder message around Mother's Day.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It adds a personal and emotional layer to the campaign.</p></div>
+        <div class="examples"><span class="lbl">Example</span><div class="ex">A small note on what motherhood means and why this campaign matters.</div></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><div class="card-n">2</div><h3>Team Member Stories</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Ask team members to share what they got from their moms or what they would gift them.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It makes the campaign feel more human and relatable.</p></div>
+        <div class="examples"><span class="lbl">Example</span><div class="ex">One thing I got from my mom is confidence / discipline / patience</div></div>
+      </article>
+
+      <article class="card">
+        <div class="card-top"><div class="card-n">3</div><h3>Behind the Campaign Story</h3></div>
+        <div class="field"><span class="lbl">What we would do</span><p>Show the thought behind the Mother's Day campaign and connect it with the offer.</p></div>
+        <div class="field"><span class="lbl">How it will work</span><p>It makes the campaign feel intentional, not just sales-driven.</p></div>
+        <div class="examples"><span class="lbl">Example</span><div class="ex">This Mother's Day, our offer is designed to make gifting easier and more meaningful</div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUMMARY ================= -->
+<div class="summary">
+  <div class="eyebrow">Summary</div>
+  <p>A Mother's Day campaign that combines <em>website gifting experience</em>, <em>social media engagement</em>, and <em>emotional storytelling</em> to drive both traffic and conversions.</p>
+</div>
+
+<footer>Mother's Day Campaign Plan</footer>
+
+</body>
+</html>
